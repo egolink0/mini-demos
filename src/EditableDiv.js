@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef } from "react";
-import "./styles.css";
+import "./EditableDiv.css";
 
 export default function App() {
   // 初始化的文本
@@ -155,13 +155,13 @@ export default function App() {
   };
 
   return (
-    <div className="App" style={{ margin: "200px auto" }}>
+    <div className="App">
       <div>
         {Object.keys(dataSourceMap).map((w) => (
           <button
             key={w}
             onClick={() => onNameClick(w)}
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "10px", padding: "4px 10px" }}
           >
             {w}
           </button>
