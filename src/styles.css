@@ -1,0 +1,21 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.inputDiv{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #eee;
+  text-align: left;
+  padding: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px auto;
+}
+
+.inputDiv:empty:before {
+  content: attr(placeholder);
+  color: #bbb;
+}
